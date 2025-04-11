@@ -1,0 +1,15 @@
+<suite name="AutomationSuite" parallel="classes" thread-count="3">
+    <parameter name="browser" value="chrome"/>
+
+    <test name="FeatureTests">
+        <classes>
+            <class name="tests.RegistrationTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.LoginWithWrongCredentials"/>
+            <class name="tests.AddToCartTest"/>
+            <class name="tests.SearchTest" />
+            <class name="tests.CheckoutTest" />
+            <class name="tests.EndToEndScenarioTest" />
+        </classes>
+    </test>
+</suite>
